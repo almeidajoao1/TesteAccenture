@@ -21,7 +21,7 @@ public class MyStepsDefinition {
 
     @Before
     public void createDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\IdeaProjects\\AccentureTestCucumber\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\IdeaProjects\\TesteAccenture\\AccentureTestCucumber\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
@@ -182,6 +182,6 @@ public class MyStepsDefinition {
 
     @After
     public void fechar() {
-        //driver.quit();
+        driver.quit();
     }
 }
